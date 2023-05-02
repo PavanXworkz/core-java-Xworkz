@@ -1,14 +1,26 @@
-class RestorentTester{
-	public static void main(String []q)
+class RestorentTester
+{
+	public static void main(String[] food)
 	{
-		System.out.println("main method starts");
-		String foodName="idly";
-		double prize=Restorent.searchItem(foodName);
-		System.out.println("the prize of the item  "+foodName+"is  "+prize);
-		
-		double prizeQuantity=Restorent.searchItem(foodName, 8);
-		System.out.println("the prize of the item  "+foodName+"is  "+prizeQuantity);
-				System.out.println("main method starts");
+		System.out.println("main method started");
+		Restorent.addItems("masala dosa");
+		Restorent.addItems("idly ");
+		Restorent.addItems("vada");
+		Restorent.addItems("poori");
+		Restorent.addItems("gobi mancuri");
+		Restorent.addItems("gud bud");
+		Restorent.addItems("faludha");
+		Restorent.addItems("roti");
+		Restorent.addItems("veg beriany");
+		Restorent.addItems("fried rice");
+		Restorent.addItems("curd rice");
+		Restorent.addItems("north indian meals");
+		Restorent.addItems("south indian meals");
+		Restorent.addItems("lemon rice");
+		Restorent.addItems("mango milk shake");
+		Restorent.getItems();
+		Restorent.updateItems("poori","upma");
+		Restorent.getItems();
 
 	}
 }

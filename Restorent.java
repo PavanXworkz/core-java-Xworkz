@@ -1,68 +1,42 @@
-class Restorent{
-	public static double searchItem(String foodName)
+class Restorent
+{
+	static String menu[]={null,null,null,null,null,null,null,null,null,null,null,null,null,null,null};
+	static int index;
+	public static boolean addItems(String foodName)
 	{
-		
-		System.out.println("searchItem method starts");
-		//double prize=0.00;
-			if("Masala dose"==foodName)
-			{
-				System.out.println("thanks for ordering-----"+foodName);
-                  return 250.55;
-			}
-
-			if("gobi"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 70.00;
-			}
-			if("shawarma"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 70.00;
-			}
-			if("anna and samber"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 80.00;
-			}
-			 if("samosa"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 55.00;
-			}
-			if("idly"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 50.00;
-			}
-			if("oreo shake"==foodName)
-			{
-				System.out.println("thanks for ordering-------"+foodName);
-				return 100.00;
-			}
-		System.out.println("searchItem method starts");
-		return 0.00;
+		System.out.println("add items method started ");
+		boolean isAdded=false;
+		if(menu!=null)
+		{
+			menu[index++]=foodName;
+			isAdded=true;
+		}
+		else
+		{
+			System.out.println("food name not found"+foodName);
+		}
+		System.out.println("add items method ended");
+		return isAdded;
 	}
-	public static double searchItem(String foodName , int quantity)
+	public static void getItems()
 	{
-		System.out.println("searchItem method started");
-		//double prize=0.00;
-		if("masala dosa"==foodName)
+		System.out.println("get items method started");
+		for(int i=0;i<menu.length;i++)
 		{
-			System.out.println("thanks for ordering-----"+foodName);
-			return 250.00* quantity;
+			System.out.println(menu[i]);
 		}
-		if("samosa"==foodName)
+		System.out.println("----get items method ended");
+	}
+	public static boolean updateItems(String oldFoodName,String updateFoodName)
+	{
+		System.out.println("-----update tiem method started-----");
+		boolean isUpdate=false;
+		for(int i=0;i<menu.length;i++)
 		{
-			System.out.println("thanks for ordering-----"+foodName);
-			return 55.00* quantity;
+			if(menu[i]==oldFoodName)
+			menu[i]=updateFoodName;
 		}
-		if("idly"==foodName)
-		{
-			System.out.println("thanks for ordering-----"+foodName);
-			return 50.00 * quantity;
-		}
-		System.out.println("search item method ended");
-		return 0.00;
+		System.out.println("----update food name method ended----");
+		return isUpdate;
 	}
 }
