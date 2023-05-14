@@ -1,190 +1,89 @@
-class RobotTester{
-	public static void main(String a[]){
-		System.out.println("Main method Started");
-	
-	Robot robot = new Robot();
-	robot.name= "Human support Robot";
-	robot.creater= "Toyota motor corp";
-	robot.country= "Japan";
-	robot.year= 2012;
-	robot.type= "Medical Research";
-	robot.getRobot();
-	System.out.println("Name:"+robot.name+" Creater:"+robot.creater+ " Country:"+robot.country+ " Year:"+
-	robot.year+ " Type:"+robot.type);
-	
-	
-	Robot robot1 = new Robot();
-	robot1.name= "Aquanuat";
-	robot1.creater= "Houston Mechatronics Inc.";
-	robot1.country= "US";
-	robot1.year= 2019;
-	robot1.type= "UnderWater, Industrial";
-	robot1.getRobot();
-	System.out.println("Name:"+robot1.name+" Creater:"+robot1.creater+ " Country:"+robot1.country+ " Year:"+robot1.year+ " Type:"+robot1.type);
-	
-	Robot robot2 = new Robot();
-	robot2.name= "Daisy";
-	robot2.creater= "Hebi Robotics";
-	robot2.country= "US";
-	robot2.year= 2017;
-	robot2.type= "Research";
-	robot2.getRobot();
-	System.out.println("Name:"+robot2.name+" Creater:"+robot2.creater+ " Country:"+robot2.country+ " Year:"+robot2.year+ " Type:"+robot2.type);
-	
-	Robot robot3 = new Robot();
-	robot3.name= "Stretch";
-	robot3.creater= "Hello Robot";
-	robot3.country= "US";
-	robot3.year= 2020;
-	robot3.type= "Research, Telepresence";
-	robot3.getRobot();
-	System.out.println("Name:"+robot3.name+" Creater:"+robot3.creater+ " Country:"+robot3.country+ " Year:"+robot3.year+ " Type:"+robot3.type);
-	
-	Robot robot4 = new Robot();
-	robot4.name= "Lola";
-	robot4.creater= "Technical University of Munich";
-	robot4.country= "Germany";
-	robot4.year= 2010;
-	robot4.type= "Humanoids ,Research";
-	robot4.getRobot();
-	System.out.println("Name:"+robot4.name+" Creater:"+robot4.creater+ " Country:"+robot4.country+ " Year:"+robot4.year+ " Type:"+robot4.type);
-	
-	Robot robot5 = new Robot();
-	robot5.name= "Root";
-	robot5.creater= "iRobot";
-	robot5.country= "US";
-	robot5.year= 2018;
-	robot5.type= "Education,Consumer";
-	robot5.getRobot();
-	System.out.println("Name:"+robot5.name+" Creater:"+robot5.creater+ " Country:"+robot5.country+ " Year:"+robot5.year+ " Type:"+robot5.type);
-	
-	Robot robot6 = new Robot();
-	robot6.name= "Koov";
-	robot6.creater= "Sony";
-	robot6.country= "Japan";
-	robot6.year= 2018;
-	robot6.type= "Education,Consumer";
-	robot6.getRobot();
-	System.out.println("Name"+robot6.name+" Creater:"+robot6.creater+ " Country:"+robot6.country+ " Year:"+robot6.year+ " Type:"+robot6.type);
-	
-	Robot robot7 = new Robot();
-	robot7.name= "Dash and Dot";
-	robot7.creater= "Wonder Workshop";
-	robot7.country= "US";
-	robot7.year= 2014;
-	robot7.type= "Education,Consumer";
-	robot7.getRobot();
-	System.out.println("Name"+robot7.name+" Creater:"+robot7.creater+ " Country:"+robot7.country+ " Year:"+robot7.year+ " Type:"+robot7.type);
-	
-	Robot robot8 = new Robot();
-	robot8.name= "SpHero";
-	robot8.creater= "Sphero";
-	robot8.country= "US";
-	robot8.year= 2011;
-	robot8.type= "Consumer";
-	robot8.getRobot();
-	System.out.println("Name"+robot8.name+" Creater:"+robot8.creater+ " Country:"+robot8.country+ " Year:"+robot8.year+ " Type:"+robot8.type);
-	
-	Robot robot9 = new Robot();
-	robot9.name= "Lego Mindstorms EV3";
-	robot9.creater= "Lego";
-	robot9.country= "Denmark";
-	robot9.year= 2013;
-	robot9.type= "Education,Consumer";
-	robot9.getRobot();
-	System.out.println("Name"+robot9.name+" Creater:"+robot9.creater+ " Country:"+robot9.country+ " Year:"+robot9.year+ " Type:"+robot9.type);
-	
-	Robot robot10 = new Robot();
-	robot10.name= "Atlas";
-	robot10.creater= "Boston Dynamics";
-	robot10.country= "US";
-	robot10.year= 2016;
-	robot10.type= "Humanoids,Industrial";
-	robot10.getRobot();
-	System.out.println("Name"+robot10.name+" Creater:"+robot10.creater+ " Country:"+robot10.country+ " Year:"+robot10.year+ " Type:"+robot10.type);
-	
-	Robot robot11 = new Robot();
-	robot11.name= "Spot";
-	robot11.creater= "Boston Dynamics";
-	robot11.country= "US";
-	robot11.year= 2016;
-	robot11.type= "Industrial,Reaserch";
-	robot11.getRobot();
-	System.out.println("Name"+robot11.name+" Creater:"+robot11.creater+ " Country:"+robot11.country+ " Year:"+robot11.year+ " Type:"+robot11.type);
-	
-	Robot robot12 = new Robot();
-	robot12.name= "BigDog";
-	robot12.creater= "Boston Dynamics";
-	robot12.country= "US";
-	robot12.year= 2005;
-	robot12.type= "Military & Security, Research";
-	robot12.getRobot();
-	System.out.println("Name"+robot12.name+" Creater:"+robot12.creater+ " Country:"+robot12.country+ " Year:"+robot12.year+ " Type:"+robot12.type);
-	
-	Robot robot13 = new Robot();
-	robot13.name= "Alpha Dog";
-	robot13.creater= "Boston Dynamics";
-	robot13.country= "US";
-	robot13.year= 2011;
-	robot13.type= "Military & Security, Research";
-	robot13.getRobot();
-	System.out.println("Name"+robot13.name+" Creater:"+robot13.creater+ " Country:"+robot13.country+ " Year:"+robot13.year+ " Type:"+robot13.type);
-	
-	Robot robot14 = new Robot();
-	robot14.name= "Petman";
-	robot14.creater= "Boston Dynamics";
-	robot14.country= "US";
-	robot14.year= 2000;
-	robot14.type= "Humanoid, Military & Security";
-	robot14.getRobot();
-	System.out.println("Name"+robot14.name+" Creater:"+robot14.creater+ " Country:"+robot14.country+ " Year:"+robot14.year+ " Type:"+robot14.type);
+class RobotTester
+{
+	public static void main(String r[])
+	{
 
-	Robot robot19 = new Robot();
-	robot19.name= "iCub";
-	robot19.creater= "Robocub Consortium and IIT";
-	robot19.country= "Italy";
-	robot19.year= 2004;
-	robot19.type= "Humanoid,Research";
-	robot19.getRobot();
-	System.out.println("Name"+robot19.name+" Creater:"+robot19.creater+ " Country:"+robot19.country+ " Year:"+robot19.year+ " Type:"+robot19.type);
-	
-	Robot robot15 = new Robot();
-	robot15.name= "CB2";
-	robot15.creater= "Osaka University";
-	robot15.country= "Japan";
-	robot15.year= 2006;
-	robot15.type= "Humanoid,Reaserch";
-	robot15.getRobot();
-	System.out.println("Name"+robot15.name+" Creater:"+robot15.creater+ " Country:"+robot15.country+ " Year:"+robot15.year+ " Type:"+robot15.type);
-
-	Robot robot16 = new Robot();
-	robot16.name= "DiegoSan";
-	robot16.creater= "Boston Dynamics";
-	robot16.country= "US";
-	robot16.year= 2000;
-	robot16.type= "Humanoid, Military & Security";
-	robot16.getRobot();
-	System.out.println("Name"+robot16.name+" Creater:"+robot16.creater+ " Country:"+robot16.country+ " Year:"+robot16.year+ " Type:"+robot16.type);
-
-	Robot robot17 = new Robot();
-	robot17.name= "Petman";
-	robot17.creater= "Boston Dynamics";
-	robot17.country= "US";
-	robot17.year= 2000;
-	robot17.type= "Humanoid, Military & Security";
-	robot17.getRobot();
-	System.out.println("Name"+robot17.name+" Creater:"+robot17.creater+ " Country:"+robot17.country+ " Year:"+robot17.year+ " Type:"+robot17.type);
-
-	Robot robot18 = new Robot();
-	robot18.name= "Petman";
-	robot18.creater= "Boston Dynamics";
-	robot18.country= "US";
-	robot18.year= 2000;
-	robot18.type= "Humanoid, Military & Security";
-	robot18.getRobot();
-	System.out.println("Name"+robot18.name+" Creater:"+robot18.creater+ " Country:"+robot18.country+ " Year:"+robot18.year+ " Type:"+robot18.type);	
-	
-		System.out.println("Main method Ended");
+		Robot robot= new Robot(1,"Human support Robot","Toyota motor corp","Japan",2021);
+		System.out.println("Id:"+robot.RobotId+"\n name:"+robot.name+"\n creater:"+robot.creater+"\n country:"+robot.country+"\n year:"+robot.year);
+		System.out.println("------------------");
 		
+		Robot robot1= new Robot(2,"Aquanuat","Houston","US",2019);
+		System.out.println("Id:"+robot1.RobotId+"\n name:"+robot1.name+"\n creater:"+robot1.creater+"\n country:"+robot1.country+"\n year:"+robot1.year);
+		System.out.println("------------------");
+
+		Robot robot2= new Robot(3,"daisy","hebi Robotics","US",2020);
+		System.out.println("Id:"+robot2.RobotId+"\n name:"+robot2.name+"\n creater:"+robot2.creater+"\n country:"+robot2.country+"\n year:"+robot2.year);
+		System.out.println("------------------");
+
+		Robot robot3= new Robot(4,"Stretch","Hello Robot","US",2020);
+		System.out.println("Id:"+robot3.RobotId+"\n name:"+robot3.name+"\n creater:"+robot3.creater+"\n country:"+robot3.country+"\n year:"+robot3.year);
+		System.out.println("------------------");
+
+		Robot robot4= new Robot(5,"Lola","technical University of Munich","Germany",2010);
+		System.out.println("Id:"+robot4.RobotId+"\n name:"+robot4.name+"\n creater:"+robot4.creater+"\n country:"+robot4.country+"\n year:"+robot4.year);
+		System.out.println("------------------");
+
+		Robot robot5= new Robot(6,"Root","iRobot","US",2018);
+		System.out.println("Id:"+robot5.RobotId+"\n name:"+robot5.name+"\n creater:"+robot5.creater+"\n country:"+robot5.country+"\n year:"+robot5.year);
+		System.out.println("------------------");
+ 
+		Robot robot6= new Robot(7,"Koov","Sony","Japan",2018);
+		System.out.println("Id:"+robot6.RobotId+"\n name:"+robot6.name+"\n creater:"+robot6.creater+"\n country:"+robot6.country+"\n year:"+robot6.year);
+		System.out.println("------------------");
+
+		Robot robot7= new Robot(8,"Dash and Dot","Wonder Workshop","US",2014);
+		System.out.println("Id:"+robot7.RobotId+"\n name:"+robot7.name+"\n creater:"+robot7.creater+"\n country:"+robot7.country+"\n year:"+robot7.year);
+		System.out.println("------------------");
+
+		Robot robot8= new Robot(9,"SpHero","Sphero","US",2011);
+		System.out.println("Id:"+robot8.RobotId+"\n name:"+robot8.name+"\n creater:"+robot8.creater+"\n country:"+robot8.country+"\n year:"+robot8.year);
+		System.out.println("------------------");
+
+		Robot robot9= new Robot(10,"Lego Mindstorms","Lego","Denmark",2013);
+		System.out.println("Id:"+robot9.RobotId+"\n name:"+robot9.name+"\n creater:"+robot9.creater+"\n country:"+robot9.country+"\n year:"+robot9.year);
+		System.out.println("------------------");
+
+		Robot robot10= new Robot(11,"Atlas","boston Dynamics","US",2016);
+		System.out.println("Id:"+robot10.RobotId+"\n name:"+robot10.name+"\n creater:"+robot10.creater+"\n country:"+robot10.country+"\n year:"+robot10.year);
+		System.out.println("------------------");
+
+		Robot robot11= new Robot(12,"Spot","boston Dynamics","US",2016);
+		System.out.println("Id:"+robot11.RobotId+"\n name:"+robot11.name+"\n creater:"+robot11.creater+"\n country:"+robot11.country+"\n year:"+robot11.year);
+		System.out.println("------------------");
+
+		Robot robot12= new Robot(13,"BigDog","boston Dynamics","US",2005);
+		System.out.println("Id:"+robot12.RobotId+"\n name:"+robot12.name+"\n creater:"+robot12.creater+"\n country:"+robot12.country+"\n year:"+robot12.year);
+		System.out.println("------------------");
+
+		Robot robot13= new Robot(14,"Alpha Dog","boston Dynamics","US",2011);
+		System.out.println("Id:"+robot13.RobotId+"\n name:"+robot13.name+"\n creater:"+robot13.creater+"\n country:"+robot13.country+"\n year:"+robot13.year);
+		System.out.println("------------------");
+
+		Robot robot14= new Robot(15,"Petman","boston Dynamics","US",2000);
+		System.out.println("Id:"+robot14.RobotId+"\n name:"+robot14.name+"\n creater:"+robot14.creater+"\n country:"+robot14.country+"\n year:"+robot14.year);
+		System.out.println("------------------");
+
+		Robot robot15= new Robot(16,"iCube","Robocub Consortium","Italy",2004);
+		System.out.println("Id:"+robot15.RobotId+"\n name:"+robot15.name+"\n creater:"+robot15.creater+"\n country:"+robot15.country+"\n year:"+robot15.year);
+		System.out.println("------------------");
+
+		Robot robot16= new Robot(17,"CB2","Osaka University","Japan",2006);
+		System.out.println("Id:"+robot16.RobotId+"\n name:"+robot16.name+"\n creater:"+robot16.creater+"\n country:"+robot16.country+"\n year:"+robot16.year);
+		System.out.println("------------------");
+
+		Robot robot17= new Robot(18,"DiegoSan","boston Dynamics","US",2000);
+		System.out.println("Id:"+robot17.RobotId+"\n name:"+robot17.name+"\n creater:"+robot17.creater+"\n country:"+robot17.country+"\n year:"+robot17.year);
+		System.out.println("------------------");
+
+		Robot robot18= new Robot(19,"Petman","boston Dynamics","US",2000);
+		System.out.println("Id:"+robot18.RobotId+"\n name:"+robot18.name+"\n creater:"+robot18.creater+"\n country:"+robot18.country+"\n year:"+robot18.year);
+		System.out.println("------------------");
+
+		Robot robot19= new Robot(20,"Asimo","Honda","Japan",2000);
+		System.out.println("Id:"+robot19.RobotId+"\n name:"+robot19.name+"\n creater:"+robot19.creater+"\n country:"+robot19.country+"\n year:"+robot19.year);
+		System.out.println("------------------");
+
+		Robot robot20= new Robot(21,"DiegoSan","boston Dynamics","US",2000);
+		System.out.println("Id:"+robot20.RobotId+"\n name:"+robot20.name+"\n creater:"+robot20.creater+"\n country:"+robot20.country+"\n year:"+robot20.year);
 	}
 }

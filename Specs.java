@@ -1,12 +1,15 @@
 class Specs
 {
-	//instance
-	String frameColor;
 	String brandName;
+	String color;
+	String type;
 	double price;
-	String lence; 
 	
-	public void clearVision(){
-	System.out.println("-------vision test-------");
-	}
+	public Specs(String brandName,String color,String type,double price)
+	{
+		this.brandName=brandName;
+		this.color=color;
+		this.type=type;
+		this.price=price;
+	}	
 }

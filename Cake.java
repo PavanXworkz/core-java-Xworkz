@@ -1,12 +1,17 @@
-class Cake{
+class Cake
+{
 	String shape;
-	String flavour;
-	String desigin;
+	String flaver;
 	double price;
-	String weight;
+	int weight;
 	String color;
-	public void toEat()
+	
+	public Cake(String shape,String flaver,double price,int weight,String color)
 	{
-		System.out.println("----celebration------");
+		this.shape= shape;
+		this.flaver= flaver;
+		this.price= price;
+		this.weight =weight;
+		this.color= color;
 	}
 }

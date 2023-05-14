@@ -1,13 +1,15 @@
-class Watch{
-	// no argument constructor
-	public Watch(){
-		System.out.println("no argument constructor");
-	}
-	String type;
+class Watch
+{
 	String brandName;
-	double price;
 	String color;
-	public void giveTime(){
-		System.out.println("----What is the time---");
+	double price;
+	String type;
+	
+	public Watch(String brandName,String color,double price,String type)
+	{
+		this.brandName=brandName;
+		this.color=color;
+		this.price=price;
+		this.type=type;
 	}
 }

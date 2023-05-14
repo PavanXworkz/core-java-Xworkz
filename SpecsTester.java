@@ -1,284 +1,85 @@
-class SpecsTester{
-	public static void main(String eye[]){
-		Specs specs=new Specs();
-		specs.frameColor="blue";
-		specs.brandName="titan eye+";
-		specs.price=500.00;
-		specs.lence="plastic";
-		specs.clearVision();
-		System.out.println("colour of the specs is="+specs.frameColor);
-		System.out.println("Brand Name of the specs is="+specs.brandName);
-		System.out.println("Price of the specs is="+specs.price);
-		System.out.println("Lence type of the specs is="+specs.lence);
-
-		Specs specs1=new Specs();
-		specs1.frameColor="Yellow";
-		specs1.brandName="lencekart";
-		specs1.price=300.00;
-		specs1.lence="Polycarbonate Lence";
-		specs1.clearVision();
-		System.out.println("colour of the specs is="+specs1.frameColor);
-		System.out.println("Brand Name of the specs is="+specs1.brandName);
-		System.out.println("Price of the specs is="+specs1.price);
-		System.out.println("Lence type of the specs is="+specs1.lence);
+class SpecsTester
+{
+	public static void main(String[]see)
+	{
+		Specs eye=new Specs("Titen eye+","Yellow","Polorised sun glass",900.00);
+		System.out.println("Brand Name="+eye.brandName+"\nColor of the frame="+eye.color+"\ntype of glass="+eye.type+"\n price Rs="+eye.price);
+		System.out.println("-------------------------");
 		
+		Specs eye1=new Specs("Specs makers","Light Blue","Polycaarbonate",1658.00);
+		System.out.println("Brand Name="+eye1.brandName+"\nColor of the frame="+eye1.color+"\ntype of glass="+eye1.type+"\n price Rs="+eye1.price);
+		System.out.println("-------------------------");
 		
-		Specs specs3=new Specs();
-		specs3.frameColor="Black";
-		specs3.brandName="Faststrack";
-		specs3.price=425.00;
-		specs3.lence="glass";
-		specs3.clearVision();
-		System.out.println("colour of the specs is="+specs3.frameColor);
-		System.out.println("Brand Name of the specs is="+specs3.brandName);
-		System.out.println("Price of the specs is="+specs3.price);
-		System.out.println("Lence type of the specs is="+specs3.lence);
-
-		Specs specs4=new Specs();
-		specs4.frameColor="Green";
-		specs4.brandName="specs makers";
-		specs4.price=658.62;
-		specs4.lence="Sinlgle vision";
-		specs4.clearVision();
-		System.out.println("colour of the specs is="+specs4.frameColor);
-		System.out.println("Brand Name of the specs is="+specs4.brandName);
-		System.out.println("Price of the specs is="+specs4.price);
-		System.out.println("Lence type of the specs is="+specs4.lence);
+		Specs eye2=new Specs("Lencekart","Red","Trivex",2646.00);
+		System.out.println("Brand Name="+eye2.brandName+"\nColor of the frame="+eye2.color+"\ntype of glass="+eye2.type+"\n price Rs="+eye2.price);
+		System.out.println("-------------------------");
 		
-		Specs specs5=new Specs();
-		specs5.frameColor="White";
-		specs5.brandName="Zeiss";
-		specs5.price=2564.00;
-		specs5.lence="Progressive lence";
-		specs5.clearVision();
-		System.out.println("colour of the specs is="+specs5.frameColor);
-		System.out.println("Brand Name of the specs is="+specs5.brandName);
-		System.out.println("Price of the specs is="+specs5.price);
-		System.out.println("Lence type of the specs is="+specs5.lence);
-
-		Specs specs6=new Specs();
-		specs6.frameColor="Greay";
-		specs6.brandName="TomFord";
-		specs6.price=6548.00;
-		specs6.lence="Concave Lence";
-		specs6.clearVision();
-		System.out.println("colour of the specs is="+specs6.frameColor);
-		System.out.println("Brand Name of the specs is="+specs6.brandName);
-		System.out.println("Price of the specs is="+specs6.price);
-		System.out.println("Lence type of the specs is="+specs6.lence);
+		Specs eye3=new Specs("Eyedo","pink","High index plastic",653.65);
+		System.out.println("Brand Name="+eye3.brandName+"\nColor of the frame="+eye3.color+"\ntype of glass="+eye3.type+"\n price Rs="+eye3.price);
+		System.out.println("-------------------------");
 		
+		Specs eye4=new Specs("Carrera","Black","concave",145.50);
+		System.out.println("Brand Name="+eye4.brandName+"\nColor of the frame="+eye4.color+"\ntype of glass="+eye4.type+"\n price Rs="+eye4.price);
+		System.out.println("-------------------------");
 		
-		Specs specs7=new Specs();
-		specs7.frameColor="Aqua";
-		specs7.brandName="LogiTech";
-		specs7.price=580.00;
-		specs7.lence="Concave Lence";
-		specs7.clearVision();
-		System.out.println("colour of the specs is="+specs7.frameColor);
-		System.out.println("Brand Name of the specs is="+specs7.brandName);
-		System.out.println("Price of the specs is="+specs7.price);
-		System.out.println("Lence type of the specs is="+specs7.lence);
-
-		Specs specs8=new Specs();
-		specs8.frameColor="Brown";
-		specs8.brandName="Ray Ban";
-		specs8.price=1065.54;
-		specs8.lence="Plus Lence";
-		specs8.clearVision();
-		System.out.println("colour of the specs is="+specs8.frameColor);
-		System.out.println("Brand Name of the specs is="+specs8.brandName);
-		System.out.println("Price of the specs is="+specs8.price);
-		System.out.println("Lence type of the specs is="+specs8.lence);
+		Specs eye5=new Specs("Faststrack","purple","Aspheric",1225.80);
+		System.out.println("Brand Name="+eye5.brandName+"\nColor of the frame="+eye5.color+"\ntype of glass="+eye5.type+"\n price Rs="+eye5.price);
+		System.out.println("-------------------------");
 		
-		Specs specs9=new Specs();
-		specs9.frameColor="Violet";
-		specs9.brandName="Le Specs";
-		specs9.price=5456.00;
-		specs9.lence="Cyndrical Lence";
-		specs9.clearVision();
-		System.out.println("colour of the specs is="+specs9.frameColor);
-		System.out.println("Brand Name of the specs is="+specs9.brandName);
-		System.out.println("Price of the specs is="+specs9.price);
-		System.out.println("Lence type of the specs is="+specs9.lence);
-
-		Specs specs10=new Specs();
-		specs10.frameColor="Corol";
-		specs10.brandName="H&M";
-		specs10.price=3654.00;
-		specs10.lence="Convex Lence";
-		specs10.clearVision();
-		System.out.println("colour of the specs is="+specs10.frameColor);
-		System.out.println("Brand Name of the specs is="+specs10.brandName);
-		System.out.println("Price of the specs is="+specs10.price);
-		System.out.println("Lence type of the specs is="+specs10.lence);
+		Specs eye6=new Specs("Oakely","Brown","Photochromic",1200.00);
+		System.out.println("Brand Name="+eye6.brandName+"\nColor of the frame="+eye6.color+"\ntype of glass="+eye6.type+"\n price Rs="+eye6.price);
+		System.out.println("-------------------------");
 		
+		Specs eye7=new Specs("Coolwinks","Gold","Tindent",1200.00);
+		System.out.println("Brand Name="+eye7.brandName+"\nColor of the frame="+eye7.color+"\ntype of glass="+eye7.type+"\n price Rs="+eye7.price);
+		System.out.println("-------------------------");
 		
-		Specs specs11=new Specs();
-		specs11.frameColor="Chocklet";
-		specs11.brandName="Okley";
-		specs11.price=2135.00;
-		specs11.lence="glass";
-		specs11.clearVision();
-		System.out.println("colour of the specs is="+specs11.frameColor);
-		System.out.println("Brand Name of the specs is="+specs11.brandName);
-		System.out.println("Price of the specs is="+specs11.price);
-		System.out.println("Lence type of the specs is="+specs11.lence);
-
-		Specs specs12=new Specs();
-		specs12.frameColor="Cyan";
-		specs12.brandName="specs makers";
-		specs12.price=6648.62;
-		specs12.lence="Sinlgle vision";
-		specs12.clearVision();
-		System.out.println("colour of the specs is="+specs12.frameColor);
-		System.out.println("Brand Name of the specs is="+specs12.brandName);
-		System.out.println("Price of the specs is="+specs12.price);
-		System.out.println("Lence type of the specs is="+specs12.lence);
+		Specs eye8=new Specs("Parada","Violete","Anty reflecttive",1165.00);
+		System.out.println("Brand Name="+eye8.brandName+"\nColor of the frame="+eye8.color+"\ntype of glass="+eye8.type+"\n price Rs="+eye8.price);
+		System.out.println("-------------------------");
 		
-		Specs specs13=new Specs();
-		specs13.frameColor="White";
-		specs13.brandName="Tiffany";
-		specs13.price=2564.00;
-		specs13.lence="Progressive lence";
-		specs13.clearVision();
-		System.out.println("colour of the specs is="+specs13.frameColor);
-		System.out.println("Brand Name of the specs is="+specs13.brandName);
-		System.out.println("Price of the specs is="+specs13.price);
-		System.out.println("Lence type of the specs is="+specs13.lence);
-
-		Specs specs14=new Specs();
-		specs14.frameColor="Crimson";
-		specs14.brandName="Senator";
-		specs14.price=9548.00;
-		specs14.lence="Concave Lence";
-		specs14.clearVision();
-		System.out.println("colour of the specs is="+specs14.frameColor);
-		System.out.println("Brand Name of the specs is="+specs14.brandName);
-		System.out.println("Price of the specs is="+specs14.price);
-		System.out.println("Lence type of the specs is="+specs14.lence);
+		Specs eye9=new Specs("Polaride","Pesion Blue","Bifocal",6548.00);
+		System.out.println("Brand Name="+eye9.brandName+"\nColor of the frame="+eye9.color+"\ntype of glass="+eye9.type+"\n price Rs="+eye9.price);
+		System.out.println("-------------------------");
 		
+		Specs eye10=new Specs("Rayban","Mat Balck","Tri focal",2100.00);
+		System.out.println("Brand Name="+eye10.brandName+"\nColor of the frame="+eye10.color+"\ntype of glass="+eye10.type+"\n price Rs="+eye10.price);
+		System.out.println("-------------------------");
 		
-		Specs specs15=new Specs();
-		specs15.frameColor="Cronsilk";
-		specs15.brandName="Visage";
-		specs15.price=580.00;
-		specs15.lence="Concave Lence";
-		specs15.clearVision();
-		System.out.println("colour of the specs is="+specs15.frameColor);
-		System.out.println("Brand Name of the specs is="+specs15.brandName);
-		System.out.println("Price of the specs is="+specs15.price);
-		System.out.println("Lence type of the specs is="+specs15.lence);
-
-		Specs specs16=new Specs();
-		specs16.frameColor="Gold";
-		specs16.brandName="Gucci";
-		specs16.price=18965.54;
-		specs16.lence="Plus Lence";
-		specs16.clearVision();
-		System.out.println("colour of the specs is="+specs16.frameColor);
-		System.out.println("Brand Name of the specs is="+specs16.brandName);
-		System.out.println("Price of the specs is="+specs16.price);
-		System.out.println("Lence type of the specs is="+specs16.lence);
+		Specs eye11=new Specs("D&G","Transperent","Polarised Sun Glasses",1235.00);
+		System.out.println("Brand Name="+eye11.brandName+"\nColor of the frame="+eye11.color+"\ntype of glass="+eye11.type+"\n price Rs="+eye11.price);
+		System.out.println("-------------------------");
 		
-		Specs specs17=new Specs();
-		specs17.frameColor="Darkblue";
-		specs17.brandName="Nine West";
-		specs17.price=5654.00;
-		specs17.lence="plastic";
-		specs17.clearVision();
-		System.out.println("colour of the specs is="+specs17.frameColor);
-		System.out.println("Brand Name of the specs is="+specs17.brandName);
-		System.out.println("Price of the specs is="+specs17.price);
-		System.out.println("Lence type of the specs is="+specs17.lence);
-
-		Specs specs18=new Specs();
-		specs18.frameColor="GreenYellow";
-		specs18.brandName="bebe";
-		specs18.price=30043.00;
-		specs18.lence="Polycarbonate Lence";
-		specs18.clearVision();
-		System.out.println("colour of the specs is="+specs18.frameColor);
-		System.out.println("Brand Name of the specs is="+specs18.brandName);
-		System.out.println("Price of the specs is="+specs18.price);
-		System.out.println("Lence type of the specs is="+specs18.lence);
+		Specs eye12=new Specs("Gucci","Coral","Photochromic",2530.00);
+		System.out.println("Brand Name="+eye12.brandName+"\nColor of the frame="+eye12.color+"\ntype of glass="+eye12.type+"\n price Rs="+eye12.price);
+		System.out.println("-------------------------");
 		
+		Specs eye13=new Specs("Lafont","Greay","Trivex",1200.00);
+		System.out.println("Brand Name="+eye13.brandName+"\nColor of the frame="+eye13.color+"\ntype of glass="+eye13.type+"\n price Rs="+eye13.price);
+		System.out.println("-------------------------");
 		
-		Specs specs19=new Specs();
-		specs19.frameColor="Silver";
-		specs19.brandName="Cloudsocity";
-		specs19.price=425.00;
-		specs19.lence="glass";
-		specs19.clearVision();
-		System.out.println("colour of the specs is="+specs19.frameColor);
-		System.out.println("Brand Name of the specs is="+specs19.brandName);
-		System.out.println("Price of the specs is="+specs19.price);
-		System.out.println("Lence type of the specs is="+specs19.lence);
-
-		Specs specs20=new Specs();
-		specs20.frameColor="Green";
-		specs20.brandName="specs makers";
-		specs20.price=658.62;
-		specs20.lence="Sinlgle vision";
-		specs20.clearVision();
-		System.out.println("colour of the specs is="+specs20.frameColor);
-		System.out.println("Brand Name of the specs is="+specs20.brandName);
-		System.out.println("Price of the specs is="+specs20.price);
-		System.out.println("Lence type of the specs is="+specs20.lence);
+		Specs eye14=new Specs("Elle","cyan","Polorised sun glass",900.00);
+		System.out.println("Brand Name="+eye14.brandName+"\nColor of the frame="+eye14.color+"\ntype of glass="+eye14.type+"\n price Rs="+eye14.price);
+		System.out.println("-------------------------");
 		
-		Specs specs21=new Specs();
-		specs21.frameColor="White";
-		specs21.brandName="Zeiss";
-		specs21.price=2564.00;
-		specs21.lence="Progressive lence";
-		specs21.clearVision();
-		System.out.println("colour of the specs is="+specs21.frameColor);
-		System.out.println("Brand Name of the specs is="+specs21.brandName);
-		System.out.println("Price of the specs is="+specs21.price);
-		System.out.println("Lence type of the specs is="+specs21.lence);
-
-		Specs specs22=new Specs();
-		specs22.frameColor="DarkGreay";
-		specs22.brandName="Orton";
-		specs22.price=4548.00;
-		specs22.lence="Concave Lence";
-		specs22.clearVision();
-		System.out.println("colour of the specs is="+specs22.frameColor);
-		System.out.println("Brand Name of the specs is="+specs22.brandName);
-		System.out.println("Price of the specs is="+specs22.price);
-		System.out.println("Lence type of the specs is="+specs22.lence);
+		Specs eye15=new Specs("Nine West","Yellow","Cylinderical",900.00);
+		System.out.println("Brand Name="+eye15.brandName+"\nColor of the frame="+eye15.color+"\ntype of glass="+eye15.type+"\n price Rs="+eye15.price);
+		System.out.println("-------------------------");
 		
+		Specs eye16=new Specs("Versace","White","Polorised sun glass",900.00);
+		System.out.println("Brand Name="+eye16.brandName+"\nColor of the frame="+eye16.color+"\ntype of glass="+eye16.type+"\n price Rs="+eye16.price);
+		System.out.println("-------------------------");
 		
-		Specs specs23=new Specs();
-		specs23.frameColor="Aqua";
-		specs23.brandName="LogiTech";
-		specs23.price=580.00;
-		specs23.lence="Concave Lence";
-		specs23.clearVision();
-		System.out.println("colour of the specs is="+specs23.frameColor);
-		System.out.println("Brand Name of the specs is="+specs23.brandName);
-		System.out.println("Price of the specs is="+specs23.price);
-		System.out.println("Lence type of the specs is="+specs23.lence);
-
-		Specs specs24=new Specs();
-		specs24.frameColor="Brown";
-		specs24.brandName="Ray Ban";
-		specs24.price=1065.54;
-		specs24.lence="Plus Lence";
-		specs24.clearVision();
-		System.out.println("colour of the specs is="+specs24.frameColor);
-		System.out.println("Brand Name of the specs is="+specs24.brandName);
-		System.out.println("Price of the specs is="+specs24.price);
-		System.out.println("Lence type of the specs is="+specs24.lence);
+		Specs eye17=new Specs("Armani","Dark Green","Concave",9200.00);
+		System.out.println("Brand Name="+eye17.brandName+"\nColor of the frame="+eye17.color+"\ntype of glass="+eye17.type+"\n price Rs="+eye17.price);
+		System.out.println("-------------------------");
 		
-		Specs specs25=new Specs();
-		specs25.frameColor="Darkblue";
-		specs25.brandName="Nine West";
-		specs25.price=5654.00;
-		specs25.lence="plastic";
-		specs25.clearVision();
-		System.out.println("colour of the specs is="+specs25.frameColor);
-		System.out.println("Brand Name of the specs is="+specs25.brandName);
-		System.out.println("Price of the specs is="+specs25.price);
-		System.out.println("Lence type of the specs is="+specs25.lence);
+		Specs eye18=new Specs("Voge","cron silk","High index plastic",1900.00);
+		System.out.println("Brand Name="+eye18.brandName+"\nColor of the frame="+eye18.color+"\ntype of glass="+eye18.type+"\n price Rs="+eye18.price);
+		System.out.println("-------------------------");
+		
+		Specs eye19=new Specs("Think","metalic green","Trivex",2900.00);
+		System.out.println("Brand Name="+eye19.brandName+"\nColor of the frame="+eye19.color+"\ntype of glass="+eye19.type+"\n price Rs="+eye19.price);
+		System.out.println("-------------------------");
 	}
 }
