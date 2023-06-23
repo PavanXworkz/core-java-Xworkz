@@ -1,5 +1,7 @@
 package com.xworkz.hospitalapp;
 
+import com.xworkz.hospitalapp.address.Address;
+import com.xworkz.hospitalapp.address.Country;
 import com.xworkz.hospitalapp.blood_group.BloodGroup;
 import com.xworkz.hospitalapp.gender.Gender;
 import com.xworkz.hospitalapp.id.IdFroof;
@@ -17,10 +19,12 @@ public class Patient {
   private int age;
   private IdFroof id;
   private long phNumber;
-  private String adders;
+  //private String adders;
   private String deceaseName;
   private WardNumber wardNumber;
   private BloodGroup bloodGroup;
   private IsInsurenceAvalable isInsurenceAvalable;
-  
+  private  String attenderName;
+  //private Country country;
+  Address address;
 }

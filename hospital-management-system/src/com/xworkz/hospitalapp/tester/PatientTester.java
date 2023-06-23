@@ -1,5 +1,6 @@
 package com.xworkz.hospitalapp.tester;
 
+import com.xworkz.hospitalapp.address.*;
 import com.xworkz.hospitalapp.blood_group.BloodGroup;
 import com.xworkz.hospitalapp.Patient;
 import com.xworkz.hospitalapp.gender.Gender;
@@ -112,8 +113,8 @@ public class PatientTester {
       patient.setId(IdFroof.valueOf(sc.next()));
       System.out.println("enter patient contact number");
       patient.setPhNumber(sc.nextLong());
-      System.out.println("Enter patient address");
-      patient.setAdders(sc.next());
+     // System.out.println("Enter patient address");
+     // patient.setAdders(sc.next());
       System.out.println("enter the patient decease name");
       patient.setDeceaseName(sc.next());
       System.out.println("enter the patient ward number PE557, A507, A50, DF59=");
@@ -122,27 +123,67 @@ public class PatientTester {
       patient.setBloodGroup(BloodGroup.valueOf(sc.next()));
       System.out.println("Check weather the patient is insured or not TRUE,FALSE");
       patient.setIsInsurenceAvalable(IsInsurenceAvalable.valueOf(sc.next()));
+      System.out.println("Enter the attender Name");
+      patient.setAttenderName(sc.next());
+      
+      DoorNo doorNo = new DoorNo();
+      Street street = new Street();
+      City city = new City();
+      State state = new State();
+      Country country = new Country();
+      Address address=new Address();
+      
+      Scanner scan = new Scanner(System.in);
+      System.out.println("enter patient door no");
+      doorNo.setDoorNo(scan.nextInt());
+      System.out.println("enter patient street name");
+      street.setStreet(scan.next());
+      System.out.println("enter patient city name");
+      city.setCity(scan.next());
+      System.out.println("enter patient state name ");
+      state.setState(scan.next());
+      System.out.println("enter patient country name");
+      country.setCountry(scan.next());
+      
+      street.setDoorNo(doorNo);
+      city.setStreet(street);
+      state.setCity(city);
+      country.setState(state);
+        address.setCountry(country);
+      patient.setAddress(address);
       
       hospital.addPatient(patient);
     }
-    
     hospital.getAllPatient();
     
+   
+
+//    System.out.println("enter the patient address");
+//    hospital.getPatientByAddress(sc.next());
+//
+//    System.out.println("enter the ward number");
+//    hospital.getPatientNameByWardNo(sc.next());
+//
+//    System.out.println("enter diesease name");
+//    hospital.getPatientNameByDieseaseName(sc.next());
+//
+//     System.out.println("update desease name by patient name");
+//    hospital.updatePatientDieseaseByPatientdieseaseName(sc.next(), sc.next());
+//
+//    System.out.println(" update Patient Ward No By Patient Id");
+//    hospital.updatePatientWardNoByPatientId(sc.nextInt(),WardNumber.valueOf(sc.next()).toString());
+    
+    System.out.println("update Patient Age By Patient Id");
+    hospital.updatePatientAgeByPatientId(sc.nextInt(), sc.nextInt());
+    
+    System.out.println("get patient details by patient id");
+    Patient pat = hospital.getPatientById(sc.nextInt());
+    System.out.println(pat);
+    
+    System.out.println("get patient attender name by patient id");
+    hospital.getPatientAttenderNameByPatientId(sc.nextInt());
     
     
-    System.out.println("enter the patient address");
-    hospital.getPatientByAddress(sc.next());
     
-    System.out.println("enter the ward number");
-    hospital.getPatientNameByWardNo(sc.next());
-    
-    System.out.println("enter diesease name");
-    hospital.getPatientNameByDieseaseName(sc.next());
-    
-    System.out.println("update desease name by patient name");
-    hospital.updatePatientDieseaseByPatientdieseaseName(sc.next(), sc.next());
-    
-    System.out.println(" update Patient Ward No By Patient Id");
-    hospital.updatePatientWardNoByPatientId(sc.nextInt(),WardNumber.valueOf(sc.next()).toString());
   }
 }

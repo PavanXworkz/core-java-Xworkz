@@ -44,7 +44,7 @@ public class Apoloimp implements Hospital {
   public Patient getPatientByAddress(String address) {
     System.out.println("getting patient name by address ");
     for (int i = 0; i < this.patient.length; i++) {
-      if (this.patient[i].getAdders().equals(address))
+      if (this.patient[i].getAddress().equals(address))
         System.out.println(this.patient[i]);
     }
     return null;
@@ -53,9 +53,9 @@ public class Apoloimp implements Hospital {
   @Override
   public String getPatientNameByWardNo(String wardNo) {
     System.out.println("get patient by ward number");
-    WardNumber wardNumber = WardNumber.valueOf(wardNo);
+    // WardNumber wardNumber = WardNumber.valueOf(wardNo);
     for (int n = 0; n < patient.length; n++) {
-      if (patient[n].getWardNumber().equals(wardNumber))
+      if (patient[n].getWardNumber().toString().equals(wardNo))
         System.out.println(patient[n]);
     }
     return null;
@@ -100,4 +100,63 @@ public class Apoloimp implements Hospital {
     }
     return isUpdate;
   }
+  
+  @Override
+  public boolean updatePatientAgeByPatientId(int exestingP_id, int updateAge) {
+    boolean isUpdate = false;
+    for (Patient value : this.patient) {
+      if (value.getP_Id() == exestingP_id) {
+        value.setAge(updateAge);
+        isUpdate = true;
+        System.out.println(value);
+      }
+    }
+    return isUpdate;
+  }
+  
+  @Override
+  public Patient getPatientById(int patientId) {
+    System.out.println("GEt patient details by using id");
+    Patient p = null;
+    if (patientId != 0) {
+      for (Patient pat : this.patient) {
+        if (pat.getP_Id() == patientId) {
+          p = pat;
+        }
+      }
+    }
+    return p;
+  }
+
+  @Override
+  public String getPatientAttenderNameByPatientId(int patientId) {
+      for(int n=0;n<this.patient.length;n++){
+        if(this.patient[n].getP_Id()==patientId){
+          System.out.println(patient[n].getAttenderName());
+        }
+      }
+    return null;
+  }
 }
+
+//1st iteration sunil has disease flu
+//StringBuilder b = new StringBuilder();
+//b = b.append("sunil");
+//
+//
+//2nd iteration raja also have same disease flu
+//b = b.append("sunil","raja");
+//
+//last print
+//sop(b);
+//
+//String[] patientNames = new String[3];
+//int patientIndex = 0;
+//for (int i = 0; i< this.patient.length;i++) {
+//  patientNames[patientIndex++] = this.patient[i].getPatientName();
+//        }
+//
+//again use for loop to print patientNames
+//for (String pat : patientNames) {
+//  sop(pat)
+//        }
